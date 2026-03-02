@@ -1,0 +1,24 @@
+@use '../../../assets/styles/mixin' as *;
+@use '../../../assets/styles/variables' as *;
+
+.slider-buttons{
+    @include flex-box;
+    column-gap: 2rem;
+    button{
+        width: 6rem;
+        height: 6rem;
+        @include flex-box;
+        justify-content: center;
+        font-size: 2rem;
+        background-color: $slider-button-bg;
+        color: $slider-button-color;
+        transition: all 0.1 ease;
+        &:active{
+            transform: scale(0.9);
+        }
+        &:hover{
+            background-color: $slider-button-color;
+            color: $slider-button-bg;
+        }
+    }
+}
