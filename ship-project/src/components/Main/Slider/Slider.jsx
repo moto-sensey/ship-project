@@ -18,10 +18,10 @@ export const Slider = ({onChangeSlide}) => {
         onChangeSlide(newIndex);
     };
     return <div className={style["slider-buttons"]}>
-        <Button onClick={prevSlide}>
+        <Button onClick={prevSlide} className="prev">
             <FaArrowLeft/>
         </Button>
-        <Button onClick={nextSlide}>
+        <Button onClick={nextSlide} className="next">
             <FaArrowRight/>
         </Button>
     </div>

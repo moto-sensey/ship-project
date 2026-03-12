@@ -16,7 +16,7 @@ export const App = () => {
       <Background currentIndex={currentIndex}>
         <Container>
           <Header/>
-          <About/>
+          <About currentIndex={currentIndex}/>
           <Slider onChangeSlide={handleSlideChange}/>
         </Container>
       </Background>
